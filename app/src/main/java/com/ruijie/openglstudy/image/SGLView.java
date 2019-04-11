@@ -33,7 +33,7 @@ public class SGLView extends GLSurfaceView {
         setRenderer(mRender);
         setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 
-        Log.w("ruijie", "just test2222");
+        Log.w("ruijie", "just test22223333333");
         try {
             mRender.setImage(BitmapFactory.decodeStream(getResources().getAssets().open("texture/fengj.png")));
         } catch (IOException e) {
