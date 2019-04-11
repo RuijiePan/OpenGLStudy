@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.opengl.GLSurfaceView;
 import android.util.AttributeSet;
+import android.util.Log;
 
 import com.ruijie.openglstudy.filter.AbsFilter;
 
@@ -32,6 +33,7 @@ public class SGLView extends GLSurfaceView {
         setRenderer(mRender);
         setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 
+        Log.w("ruijie", "just test");
         try {
             mRender.setImage(BitmapFactory.decodeStream(getResources().getAssets().open("texture/fengj.png")));
         } catch (IOException e) {
@@ -39,11 +41,11 @@ public class SGLView extends GLSurfaceView {
         }
     }
 
-    public SGLRender getRender(){
+   /* public SGLRender getRender(){
         return mRender;
     }
 
     public void setFilter(AbsFilter filter){
         mRender.setFilter(filter);
-    }
+    }*/
 }

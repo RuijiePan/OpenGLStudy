@@ -45,7 +45,7 @@ public class SGLViewActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override
+   /* @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.mDeal:
@@ -80,5 +80,5 @@ public class SGLViewActivity extends AppCompatActivity {
         mGLView.getRender().getFilter().setHalf(mIsHalf);
         mGLView.requestRender();
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
